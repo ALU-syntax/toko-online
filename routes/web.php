@@ -19,4 +19,7 @@ Route::get('/', function () {
 });
 Route::get('/products', [ProductsController::class, 'index']);
 Route::get('/products/create', [ProductsController::class, 'create']);
-Route::post('/products/create', [ProductsController::class, 'store']);
+Route::get('/products/{id}/edit', [ProductsController::class, 'edit']);
+Route::put('/products/{id}', [ProductsController::class, 'update']);
+Route::delete('/products/{id}', [ProductsController::class, 'destroy']);
+Route::post('/products', [ProductsController::class, 'store']);

@@ -1,6 +1,6 @@
 <h1>Create Product</h1>
 
-<form action="/products/create" method="POST">
+<form action="/products" method="POST">
     @csrf
     Name : <input type="text" name="name"> <br>
     Description : <input type="text" name="description"><br>
